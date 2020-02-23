@@ -64,26 +64,37 @@
             </section>
         </div>
     </article>
-    <section class="container contact">
+    <section class="container contact" itemscope itemtype="http://schema.org/LocalBusiness">
         <header class="contactHeader">
             <h2>Kontakt</h2>
         </header>
         <section>
             <h3>Adres</h3>
-            <p>Salon Urody Ann-Marie</p>
-            <p>ul. Plac Ignacego Daszyńskiego 5</p>
-            <p>42-202 Częstochowa</p>
+            <p itemprop="name">Salon Urody Ann-Marie</p> <span itemprop="address" itemscope
+                itemtype="http://schema.org/PostalAddress">
+                <p itemprop="streetAddress">ul. Plac Ignacego Daszyńskiego 5</p>
+                <p itemprop="postalCode">42-202 <span itemprop="addressLocality">Częstochowa</span>
+                </p>
+            </span> <a
+                href="https://www.google.com/maps/place/Ann+-+Mari%C3%A9/@50.812194,19.125089,17z/data=!3m1!4b1!4m5!3m4!1s0x4710b5cede45746f:0x80e66746dceae233!8m2!3d50.812194!4d19.1272777"
+                target="_blank">Google Maps</a>
         </section>
         <section class="contactPhone">
             <h3>Zadzwoń lub napisz</h3>
-            <p><i class="fa fa-phone-volume"></i>tel. 510 963 183</p> <a href="#">Kontakt</a>
+            <p itemprop="telephone" content="510963183"><i class="fa fa-phone-volume"></i>tel. 510 963 183</p> <a
+                href="tel:+48-510-963-183"><i class="fa fa-phone-volume"></i>Zadzwoń</a>
+            <a href="#"><i class="far fa-paper-plane"></i>Kontakt</a>
         </section>
-        <section>
+        <section class="openingHours">
             <h3>Godziny otwarcia</h3>
-            <p>Poniedziałek 9 - 17</p>
-            <p>Wtorek - Środa 10 - 18</p>
-            <p>Czwartek - Piątek 9 - 17</p>
-            <p>Sobota 9 - 13</p>
+            <p itemprop="openingHours" content="Mo 09:00-17:00">Poniedziałek <span class="hours">9 - 17</span>
+            </p>
+            <p itemprop="openingHours" content="Tu, We 10:00-18:00">Wtorek - Środa <span class="hours">10 - 18</span>
+            </p>
+            <p itemprop="openingHours" content="Th, Fr 09:00-17:00">Czwartek - Piątek <span class="hours">9 - 17</span>
+            </p>
+            <p itemprop="openingHours" content="Sa 09:00-13:00">Sobota <span class="hours">9 - 13</span>
+            </p>
         </section>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
