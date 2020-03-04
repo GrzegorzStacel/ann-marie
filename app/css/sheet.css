@@ -16,22 +16,60 @@ h3 {
   line-height: 24px;
   font-size: 1.8em; }
 
+.font2 {
+  font-family: 'Parisienne', cursive; }
+
+.container {
+  max-width: 1000px;
+  min-width: 800px;
+  margin: 0 auto; }
+
+.fa-phone-volume, .fa-paper-plane {
+  font-size: 1.2em;
+  color: #000;
+  margin: 0 5px; }
+
+.title {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.title h1 {
+  font-size: 3.4em;
+  margin: 0;
+  margin-bottom: 30px; }
+
+.title h3 {
+  margin: 10px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-size: 1.8em; }
+
+.title p {
+  font-size: 1.2em; }
+
+.title p:last-child {
+  color: #b8984f;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+
 .top-main {
-  background: #fff;
-  box-shadow: 0 0 11px 11px #fff;
   z-index: 1;
   position: fixed;
   width: 100%;
-  transition: 0.3s; }
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.3); }
 
 .top-main .container .wrapper {
-  background: #fff;
-  height: 50px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s; }
+  transition: 0.3s;
+  height: 20px;
+  padding: 15px; }
 
 .top-main .container .wrapper .logo {
   display: inline-block;
@@ -43,20 +81,20 @@ h3 {
 
 .top-main .container .wrapper .logo .logo-top {
   position: absolute;
-  top: -45px;
-  left: 65px;
   font-family: serif;
-  font-size: 15px;
   text-transform: uppercase;
-  color: gray;
-  transition: 0.2s; }
+  transition: 0.2s;
+  font-size: 9px;
+  top: -29px;
+  left: 44px;
+  color: #000; }
 
 .top-main .container .wrapper .logo .logo-bottom {
-  color: gray;
   font-family: 'Parisienne', cursive;
-  font-size: 4em;
   transition: 0.3s;
-  margin: 0; }
+  margin: 0;
+  font-size: 30px;
+  color: #000; }
 
 .top-main .container .wrapper .logo:hover p {
   color: #000; }
@@ -65,34 +103,35 @@ h3 {
   display: inline-block; }
 
 .top-main .container .wrapper nav a {
+  letter-spacing: 2px;
   margin-right: 10px;
   text-decoration: none;
   color: #000;
-  font-size: 1.8em;
-  transition: 0.3s; }
+  font-size: 1.3em; }
 
 .top-main .container .wrapper nav a:hover {
-  color: gray;
-  text-shadow: 0 0 2px black;
+  color: #b8984f;
   transition: 0.2s; }
+
+.top-main-index {
+  background: #fff;
+  opacity: 1; }
 
 .stick {
   width: 100%;
-  box-shadow: 0 0 10px 10px #fff; }
+  opacity: 0.7;
+  background: #000;
+  text-shadow: none; }
 
-.stick .container .wrapper {
-  padding: 0px; }
+.stick .container .wrapper .logo .logo-top, .stick .container .wrapper .logo .logo-bottom {
+  color: #fff; }
 
-.stick .container .wrapper .logo .logo-top {
-  font-size: 9px;
-  top: -29px;
-  left: 44px; }
-
-.stick .container .wrapper .logo .logo-bottom {
-  font-size: 30px; }
+.stick .container .wrapper nav {
+  background: none; }
 
 .stick .container .wrapper nav a {
-  font-size: 1.3em; }
+  color: #fff;
+  text-shadow: none; }
 
 header {
   background: #fff; }
@@ -110,20 +149,12 @@ header .nav-content img {
   max-width: 100%;
   height: auto; }
 
-.font2 {
-  font-family: 'Parisienne', cursive; }
-
-.container {
-  max-width: 1000px;
-  min-width: 800px;
-  margin: 0 auto; }
-
 footer {
   background: #000;
   text-align: center;
   color: #fff;
   padding: 2em;
-  box-shadow: 0px 0px 20px 0px white; }
+  border-top: 1px solid white; }
 
 .arrow {
   position: fixed;
@@ -141,7 +172,6 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 40px;
-  box-shadow: inset 0px 0px 20px 1px black, 0px 0px 20px 1px white;
   transition: 0.1s; }
 
 .arrow i:hover {
@@ -150,86 +180,79 @@ footer {
   transform: scale3d(1.1, 1.1, 1.1) translateY(-4px);
   cursor: pointer; }
 
-.offer {
-  position: relative;
-  padding-bottom: 50px; }
+#offer {
+  border-top: 1px solid #000;
+  margin: 0;
+  padding: 0; }
 
-.offer .container .offer-gallery {
-  padding-top: 10px;
-  width: 100%;
-  height: auto;
+#offer .offer-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  justify-content: center;
-  align-content: center; }
+  flex-wrap: wrap; }
 
-.offer .container .offer-gallery .single-offer-gallery {
-  flex-basis: 22%;
-  margin: 10px;
-  margin-top: 30px;
-  overflow: hidden;
-  border: 1.5px solid #000;
-  border-radius: 30px;
-  position: relative;
-  box-shadow: 0 20px 30px -20px #000;
-  transition: 0.3s; }
+#offer .offer-container .single-offer {
+  flex-basis: 50%;
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden; }
 
-.offer .container .offer-gallery .single-offer-gallery a img {
-  transition: all 0.3s;
+#offer .offer-container .single-offer .so-img {
+  flex-basis: 50%;
+  border: 1px solid #b8984f;
+  height: 100%; }
+
+#offer .offer-container .single-offer .so-img img {
+  transition: 0.6s;
   width: 100%;
   height: 100%;
-  opacity: 0.4; }
+  display: block; }
 
-.offer .container .offer-gallery .single-offer-gallery:hover {
-  box-shadow: 0 0 20px 0 black; }
+#offer .offer-container .single-offer .so-title {
+  flex-basis: 50%;
+  border: 1px solid #b8984f;
+  border-left: 1px solid transparent;
+  background: #eaeaea;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  transition: 1s; }
 
-.offer .container .offer-gallery .single-offer-gallery:hover img {
-  transform: scale3d(1.2, 1.2, 1.2);
-  opacity: 1; }
-
-.offer .container .offer-gallery .single-offer-gallery:hover .pic-title {
-  color: #fff;
-  top: 88%;
-  height: 50px;
-  line-height: 45px;
-  transition: 0.7s; }
-
-.offer .container .offer-gallery .single-offer-gallery:hover .bam {
-  transform: translate3D(0, 0, 0);
-  transition: .7s; }
-
-.offer .container .offer-gallery .single-offer-gallery .pic-title {
-  margin: auto;
+#offer .offer-container .single-offer .so-title .title-container {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  font-size: 1.5em;
-  text-decoration: underline;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.3s; }
 
-.offer .container .offer-gallery .single-offer-gallery .bam {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background: #000;
-  transform: translate3d(0, 60px, 0);
-  transition: 0.3s;
-  opacity: 0.6; }
+#offer .offer-container .single-offer .so-title .title-container h3 {
+  font-size: 2em; }
+
+#offer .offer-container .single-offer:hover img {
+  transform: scale(1.1, 1.1); }
+
+#offer .offer-container .single-offer:hover .so-title {
+  background: #b8984f; }
+
+#offer .offer-container .single-offer:hover .so-title .title-container {
+  color: #fff; }
+
+#offer .offer-container .change-side {
+  flex-direction: row-reverse; }
+
+#offer .offer-container .change-side .so-title {
+  border-right: 1px solid transparent;
+  border-left: 1px solid #b8984f; }
 
 .contact {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  background: #000;
+  border-top: 3px solid #fff;
+  color: #fff; }
+
+.contact .container {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: none; }
+  padding-bottom: 40px; }
 
 .contact p {
   margin: 0;
@@ -239,11 +262,12 @@ footer {
   flex-basis: 100%;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background: #000; }
 
 .contact .contactHeader::after {
   content: '';
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
   border-radius: 15px;
   width: 100px;
   margin: 0 auto;
@@ -262,27 +286,24 @@ footer {
   top: 50%; }
 
 .contact .contactPhone:before {
-  border-left: 2px solid #000;
+  border-left: 2px solid #fff;
   left: 10px; }
 
 .contact .contactPhone:after {
   right: 10px;
-  border-right: 2px solid #000; }
+  border-right: 2px solid #fff; }
 
 .contact .contactPhone p {
   padding: 4% 20px 5px 0; }
 
 .contact .contactPhone .fa-phone-volume, .contact .contactPhone .fa-paper-plane {
-  color: #fff;
+  color: #000;
   transition: 0.7s;
   position: relative;
   left: -5px; }
 
 .contact .contactPhone .fa-paper-plane {
   left: -12px; }
-
-.contact .contactPhone a:hover .fa-phone-volume, .contact .contactPhone a:hover .fa-paper-plane {
-  color: #000; }
 
 .contact section {
   flex-basis: 30%;
@@ -294,13 +315,13 @@ footer {
 
 .contact section a {
   display: inline-block;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
-  background: #000;
-  padding: 5px;
+  background: #eaeaea;
+  padding: 10px;
   width: 110px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   border-radius: 20px;
   font-family: 'Poppins', sans-serif;
   line-height: 20px;
@@ -311,16 +332,13 @@ footer {
 
 .contact section a:hover {
   transition: 0.5s;
-  background: white;
+  background: #b8984f;
   color: #000;
   transform: scale(0.9, 0.9); }
 
 .contact .openingHours p {
   text-align: left;
   margin-left: 10px; }
-
-.contact .openingHours p:hover {
-  background: #c7c6c6; }
 
 .contact .openingHours .hours {
   text-align: right;
@@ -334,26 +352,25 @@ footer {
 
 .topBG {
   position: relative;
-  padding-top: 100px;
   width: 100%;
-  height: 300px;
-  background: #000; }
+  height: 280px;
+  background: #fff;
+  border-bottom: 3px solid #000; }
 
 .topBG img {
-  width: 100%;
-  height: 100%; }
+  float: right; }
 
 .topBG .imageTitle {
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 100px;
+  left: 170px;
   font-size: 4em;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   letter-spacing: 10px;
   text-decoration: underline;
-  -webkit-text-decoration-color: goldenrod;
-  text-decoration-color: goldenrod; }
+  -webkit-text-decoration-color: #b8984f;
+  text-decoration-color: #b8984f; }
 
 .prices .tablePrices {
   display: flex;
@@ -385,10 +402,11 @@ footer {
   padding-right: 40px; }
 
 .prices .tablePrices .singlePrice:hover {
-  background: black; }
+  background: black;
+  background: #cccbcb; }
 
 .prices .tablePrices .singlePrice:hover a, .prices .tablePrices .singlePrice:hover p {
-  color: #fff; }
+  font-weight: bold; }
 
 .prices .tablePrices .pricesTitle {
   padding-top: 70px;
@@ -397,25 +415,6 @@ footer {
 .prices .tablePrices .pricesTitle:nth-child(1) {
   padding-top: 50px; }
 
-.fa-phone-volume, .fa-paper-plane {
-  font-size: 1.2em;
-  color: #000;
-  margin: 0 5px; }
-
-.title {
-  padding-top: 100px;
-  text-align: center;
-  margin-bottom: 30px; }
-
-.title h1 {
-  font-size: 4em;
-  margin: 0; }
-
-.title h3 {
-  margin: 10px;
-  margin-bottom: 20px;
-  line-height: 24px;
-  font-size: 1.8em; }
-
-.title p {
-  font-size: 1.2em; }
+#gallery {
+  background: #000;
+  padding-bottom: 80px; }
