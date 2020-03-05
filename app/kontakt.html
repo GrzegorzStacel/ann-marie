@@ -33,28 +33,41 @@
         </header>
         <section>
             <div class="topBG">
-                <p class="imageTitle">Galeria</p>
+                <p class="imageTitle">Kontakt</p>
             </div>
         </section>
-        <section id="gallery" class="zoomwall">
-            <img src="img/gallery/100_new_small.jpg" data-highres="img/gallery/100_new.jpg"
-            />
-            <img src="img/gallery/101_new_small.jpg" data-highres="img/gallery/101_new.jpg"
-            />
-            <img src="img/gallery/102_new_small.jpg" data-highres="img/gallery/102_new.jpg"
-            />
-            <img src="img/gallery/103_new_small.jpg" data-highres="img/gallery/103_new.jpg"
-            />
-            <img src="img/gallery/104_new.jpg" data-highres="img/gallery/104_new.jpg"
-            />
-            <img src="img/gallery/105_new.jpg" data-highres="img/gallery/105_new.jpg"
-            />
-            <img src="img/gallery/106_new.jpg" data-highres="img/gallery/106_new.jpg"
-            />
-            <img src="img/gallery/107_new_small.jpg" data-highres="img/gallery/107_new.jpg"
-            />
-            <img src="img/gallery/108_new.jpg" data-highres="img/gallery/108_new.jpg"
-            />
+        <section class="contact-form">
+            <img src="img/gallery/100_new.jpg" alt="">
+            <form action="php/mail.php" method="post" id="form1">
+                <div class="inputField">
+                    <label for="_name">Imię i nazwisko (wymagane)</label>
+                    <input type="text" name="_name" id="_name"
+                    required>
+                </div>
+                <div class="femail inputField filled">
+                    <label for="_email">adres e-mail (wymagane)</label>
+                    <input type="email" name="_email" id="_email"
+                    required>
+                </div>
+                <div class="fphone inputField">
+                    <label for="_phone">tel. kontaktowy</label>
+                    <input type="text" name="_phone" id="_phone">
+                </div>
+                <div class="question inputField">
+                    <label for="_query">treść zapytania</label>
+                    <textarea rows="5" name="_query" id="_query"></textarea>
+                </div>
+                <div class="rodo" style="display:none">Dane wpisane w powyższym formularzu są nam potrzebne, aby nawiązać z Tobą
+                    kontakt zwrotny. Nie są przetwarzane w żadnych innych celach ani nie są
+                    przekazywane żadnym innym podmiotom. Więcej o przetwarzaniu Danych Osobowych
+                    przez Studio Urody Ann-Marie przeczytasz w naszej <a href="polityka-prywatnosci.html">Polityce prywatności</a>.</div>
+                <div
+                class="toTheRight">
+                    <input type="submit" value="wyślij">
+                    </div>
+                    <div class="formMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi perferendis
+                        rem consectetur quae, nisi adipisci labore eaque obcaecati quos voluptatibus.</div>
+            </form>
         </section>
         <section class="contact" itemscope itemtype="http://schema.org/LocalBusiness">
             <div class="container">
