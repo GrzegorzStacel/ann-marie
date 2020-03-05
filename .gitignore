@@ -2,3 +2,5 @@ node_modules
 gulpfile.js
 package.json
 html-sources/
+*.jpg
+package-lock.json
