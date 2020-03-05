@@ -1,0 +1,28 @@
+{
+  "name": "ann-marie",
+  "version": "1.0.0",
+  "description": "strona zony",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "bs-html-injector": "^3.0.3",
+    "cli-color": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-inheritance": "^1.1.2",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grzegorz Stacel",
+  "license": "ISC"
+}
