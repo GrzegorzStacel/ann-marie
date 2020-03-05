@@ -149,6 +149,9 @@ header .nav-content img {
   max-width: 100%;
   height: auto; }
 
+#gallery {
+  background: #000; }
+
 footer {
   background: #000;
   text-align: center;
@@ -355,10 +358,11 @@ footer {
   width: 100%;
   height: 280px;
   background: #fff;
-  border-bottom: 3px solid #000; }
-
-.topBG img {
-  float: right; }
+  border-bottom: 3px solid #000;
+  background-image: url("../img/nav_bg/nav-bg-sm.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed; }
 
 .topBG .imageTitle {
   position: absolute;
@@ -402,8 +406,7 @@ footer {
   padding-right: 40px; }
 
 .prices .tablePrices .singlePrice:hover {
-  background: black;
-  background: #cccbcb; }
+  background: #ececec; }
 
 .prices .tablePrices .singlePrice:hover a, .prices .tablePrices .singlePrice:hover p {
   font-weight: bold; }
@@ -415,6 +418,60 @@ footer {
 .prices .tablePrices .pricesTitle:nth-child(1) {
   padding-top: 50px; }
 
-#gallery {
-  background: #000;
-  padding-bottom: 80px; }
+.contact-form {
+  display: flex;
+  background: #eaeaea; }
+
+.contact-form img {
+  flex-basis: 50%;
+  width: 400px;
+  height: auto; }
+
+form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: 30px 50px; }
+
+form .inputField {
+  width: 100%;
+  display: block;
+  position: relative; }
+
+form .inputField label {
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 30px;
+  color: black;
+  transition: 0.3s; }
+
+form .inputField input, form .inputField textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box; }
+
+form .inputField input:hover, form .inputField textarea:hover {
+  width: 100%;
+  cursor: default;
+  padding: -13px 20px 0;
+  color: black; }
+
+form .inputField input:focus, form .inputField textarea:focus {
+  width: 100%;
+  cursor: default;
+  padding: -13px 20px 0;
+  color: black;
+  transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75); }
+
+form .inputField.focus label {
+  top: -5px;
+  font-size: 14px;
+  color: #b8984f; }
