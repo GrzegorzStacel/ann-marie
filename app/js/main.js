@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     zoomwall.create(document.getElementById('gallery'), true);
 
 };
@@ -10,23 +10,47 @@ $(document).ready(function () {
     obslugaGalerii();
     sendingMail();
     formIsFilled();
+    slickConfigure();
+    hamburger();
 })
 
+function hamburger() {
+    $('#prime .hamburger').on('click', () => {
+        $('nav').toggleClass('mobile');
+    } )
+}
+
+function slickConfigure() {
+    $('.comment').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        fade: true,
+        arrows: false,
+    });
+}
+
 function mainStick() {
+
     $(window).scroll(function () {
-        if ($('html, body').scrollTop() < 50) {
+        // Rozwiązanie w if'ie dla różnych przeglądarek
+        if ((document.documentElement.scrollTop || document.body.scrollTop) < 50) {
             // Odklejenie menu
             $('header .top-main').removeClass('stick');
         } else {
             // Przykleja menu
             $('header .top-main').addClass('stick');
         }
+
+        
     })
 }
 
 function goTopButton() {
     $(window).scroll(function () {
-        if ($('html, body').scrollTop() < 100) {
+        if ((document.documentElement.scrollTop || document.body.scrollTop) < 100) {
             $('.arrow').css({
                 'transform': 'translateY(200px)',
             });
@@ -47,7 +71,10 @@ function goTopButton() {
 
 function obslugaGalerii() {
     $("#gallery img").hover(function () {
-        $(this).siblings().css('opacity', 0.65);
+        $(this).siblings().css({
+            'opacity': 0.65,
+            'transition': '0.2s'
+        });
     }, function () {
         $(this).siblings().css('opacity', 1);
     })
@@ -56,7 +83,6 @@ function obslugaGalerii() {
 // Frmularz PHP - START
 
 function formIsFilled() {
-    console.log('im in')
     $('form input, form textarea').focus(function () {
         $(this).parent().addClass('focus');
     })
@@ -72,44 +98,42 @@ function formIsFilled() {
 
 
 
-function sendingMail(){
+function sendingMail() {
     var infoDisplayer = $(".formMessage");
     var form = $("#form1");
-    
 
-    form.on('submit', function (e){
+
+    form.on('submit', function (e) {
         $.ajax({
-                url: "php/mail.php",
-                dataType: "JSON",
-                type: "post",
-                data:$(this).serialize(),
-                beforeSend: function(){
-                    infoDisplayer.hide();
-                    infoDisplayer.removeClass("ok error");
-                    infoDisplayer.text('trwa wysyłanie danych...').slideDown(300);
-                    console.log("beforeSend");
-                },
-                success: function(obj){
-                    if (obj.type=="ok")
-                    {
-                        infoDisplayer.addClass("ok").removeClass("error").html(obj.text).delay(4000).slideUp(500);
-                        // form.get(0).reset();
-                        console.log("success - ok");
-                    } else
-                    {
-                       infoDisplayer.addClass("error").removeClass("ok").html(obj.text);
-                       console.log("success - error");
-                    }
-                },
-                error : function(){
-                    infoDisplayer.addClass("error").removeClass("ok").html("Wystąpił błąd podczas wysyłania informacji.");
-                    console.log("error");
-                },
-                complete: function(){
-                   // infoDisplayer.fadeIn();
-                   console.log("complete");
+            url: "php/mail.php",
+            dataType: "JSON",
+            type: "post",
+            data: $(this).serialize(),
+            beforeSend: function () {
+                infoDisplayer.hide();
+                infoDisplayer.removeClass("ok error");
+                infoDisplayer.text('trwa wysyłanie danych...').slideDown(300);
+                console.log("beforeSend");
+            },
+            success: function (obj) {
+                if (obj.type == "ok") {
+                    infoDisplayer.addClass("ok").removeClass("error").html(obj.text).delay(4000).slideUp(500);
+                    // form.get(0).reset();
+                    console.log("success - ok");
+                } else {
+                    infoDisplayer.addClass("error").removeClass("ok").html(obj.text);
+                    console.log("success - error");
                 }
-           });
+            },
+            error: function () {
+                infoDisplayer.addClass("error").removeClass("ok").html("Wystąpił błąd podczas wysyłania informacji.");
+                console.log("error");
+            },
+            complete: function () {
+                // infoDisplayer.fadeIn();
+                console.log("complete");
+            }
+        });
         e.preventDefault();
     })
 }
