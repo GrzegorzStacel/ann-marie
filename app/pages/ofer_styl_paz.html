@@ -10,40 +10,50 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
         integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/extends/zoomwall/zoomwall.css">
+        <link rel="stylesheet" href="css/extends/zoomwall/zoomwall.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
         />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
         <!-- Local -->
-        <link rel="stylesheet" href="../css/sheet.css?v0.1">
+        <link rel="stylesheet" href="css/sheet.css?v0.2">
     </head>
     
     <body>
         <header>
-            <section class="top-main">
-                <div class="container wrapper">	<a href="../index.html" class="logo">
-				<p class="logo-top">studio urody</p>
-				<p class="logo-bottom">Ann-Marie</p>
-			</a>
+            <div id="Top_bar">
+                <div class="container menu_wrapper">	<a href="index.html" class="logo">
 
-                    <nav class="mobile">
-                        <div class="hamburger">	<i class="fas fa-bars"></i>
+			<p class="logo-top">studio urody</p>
 
-                        </div>
-                        <ul id="mainmenu">
-                            <li><a href="../index.html">Salon</a>
+			<p class="logo-bottom">Ann-Marie</p>
 
+		</a>
+                    <div class="hamburger">	<i class="fas fa-bars"></i>
+                    </div>
+                    <nav id="menu">
+                        <ul id="main_first">
+                            <li>	<a href="index.html">
+
+						<span>Salon</span>
+
+					</a>
                             </li>
-                            <li><a href="#" class="off">Oferta <i class="nav-arrow"></i></a>
+                            <li>
+                                <!-- <a href="#" class="expand_sec"> -->	<span class="expand_sec">
 
-                                <ul>
-                                    <li><a href="ofer_styl_paz.html">Stylizacja paznokci<i class="nav-arrow"></i></a>
+							<span>Oferta</span>	<span class="nav-arrow edit-arrow"></span></span>
+                                <!--
+                                </a> -->
+                                <ul id="main_second">
+                                    <li class="up_nav_1">	<a href="#" class="expand_thi">
 
-                                        <ul>
-                                            <li><a href="styl_paz_klas.html">Klasyczny</a>
+								Stylizacja paznokci
 
-                                            </li>
+								<span class="nav-arrow"></span>
+
+							</a>
+                                        <ul class="main_third down_nav_1">
                                             <li><a href="styl_paz_hyb.html">Hybrydowy</a>
 
                                             </li>
@@ -53,11 +63,25 @@
                                             <li><a href="styl_paz_jap.html">Japoński</a>
 
                                             </li>
+                                            <li><a href="styl_paz_meski.html">Męski</a>
+
+                                            </li>
+                                            <li><a href="styl_paz_klas.html">Klasyczny</a>
+
+                                            </li>
+                                            <li><a href="styl_paz_spa.html">SPA</a>
+
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li><a href="ofer_pedicur.html">Pedicur<i class="nav-arrow"></i></a>
+                                    <li class="up_nav_2">	<a href="#" class="expand_thi">
 
-                                        <ul>
+								Pedicure
+
+								<span class="nav-arrow"></span>
+
+							</a>
+                                        <ul class="main_third down_nav_2">
                                             <li><a href="pedicur_klas.html">Klasyczny</a>
 
                                             </li>
@@ -66,9 +90,14 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="ofer_brwi.html">Stylizacja brwi<i class="nav-arrow"></i></a>
+                                    <li class="up_nav_3">	<a href="#" class="expand_thi">
 
-                                        <ul>
+								Stylizacja brwi
+
+								<span class="nav-arrow"></span>
+
+							</a>
+                                        <ul class="main_third down_nav_3">
                                             <li><a href="brwi_klas.html">Henna klasyczna</a>
 
                                             </li>
@@ -77,9 +106,14 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="ofer_zabiegi.html">Zabiegi pielęgnacyjne<i class="nav-arrow"></i></a>
+                                    <li class="up_nav_4">	<a href="#" class="expand_thi">
 
-                                        <ul>
+								Zabiegi pielęgnacyjne
+
+								<span class="nav-arrow"></span>
+
+							</a>
+                                        <ul class="main_third down_nav_4">
                                             <li><a href="zabiegi_mikro.html">Mikrodermabrazja</a>
 
                                             </li>
@@ -93,21 +127,31 @@
                                     </li>
                                     <li><a href="makijaz.html">Makijaż</a>
 
+                                    </li>
                                 </ul>
-                                </li>
-                                <li><a href="cennik.html" class="activ">Cennik</a>
+                            </li>
+                            <li>	<a href="cennik.html">
 
-                                </li>
-                                <li><a href="galeria.html">Galeria</a>
+						<span>Cennik</span>
 
-                                </li>
-                                <li><a href="kontakt.html">Kontakt</a>
+					</a>
+                            </li>
+                            <li>	<a href="galeria.html">
 
-                                </li>
+						<span>Galeria</span>
+
+					</a>
+                            </li>
+                            <li>	<a href="kontakt.html">
+
+						<span>Kontakt</span>
+
+					</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
-            </section>
+            </div>
         </header>
         <section>
             <div class="topBG">
@@ -119,7 +163,7 @@
 
 				<div class="so-img">
 
-					<img src="../img/offer/1_edit.jpg" alt="">
+					<img src="img/offer/1_edit.jpg" alt="">
 
 				</div>
 
@@ -135,12 +179,11 @@
 
 				</div>
 
-			</a>
-	<a href="styl_paz_hyb.html" class="single-offer">
+			</a>	<a href="styl_paz_hyb.html" class="single-offer">
 
 				<div class="so-img">
 
-					<img src="../img/offer/2_edit.jpg" alt="">
+					<img src="img/offer/2_edit.jpg" alt="">
 
 				</div>
 
@@ -156,12 +199,11 @@
 
 				</div>
 
-			</a>
-	<a href="styl_paz_zel.html" class="single-offer change-side">
+			</a>	<a href="styl_paz_zel.html" class="single-offer change-side">
 
 				<div class="so-img">
 
-					<img src="../img/offer/3_edit.jpg" alt="">
+					<img src="img/offer/3_edit.jpg" alt="">
 
 				</div>
 
@@ -177,12 +219,11 @@
 
 				</div>
 
-			</a>
-	<a href="styl_paz_jap.html" class="single-offer change-side">
+			</a>	<a href="styl_paz_jap.html" class="single-offer change-side">
 
 				<div class="so-img">
 
-					<img src="../img/offer/4_edit.jpg" alt="">
+					<img src="img/offer/4_edit.jpg" alt="">
 
 				</div>
 
@@ -207,19 +248,17 @@
                      <h2>Kontakt</h2>
                 </header>
                 <section>
-                     <h3>Adres</h3>
- <span itemprop="name" class="span-container">Studio Urody Ann-Marie</span>
+                     <h3>Adres</h3> <span itemprop="name" class="span-container">Studio Urody Ann-Marie</span>
                     <br> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 
-                <span emprop="streetAddress" class="span-container">ul. Plac Ignacego Daszyńskiego 5</span>
+                <span emprop="streetAddress" class="span-container">ul. Plac Ignacego <span class="no-wrap">Daszyńskiego 5</span></span>
                     <br> <span itemprop="postalCode" class="span-container">42-202 <span itemprop="addressLocality">Częstochowa</span></span>
                     <br>
                     </span> <a href="https://www.google.com/maps/place/Ann+-+Mari%C3%A9/@50.812194,19.125089,17z/data=!3m1!4b1!4m5!3m4!1s0x4710b5cede45746f:0x80e66746dceae233!8m2!3d50.812194!4d19.1272777"
                     target="_blank">Google Maps</a>
                 </section>
                 <section class="contactPhone">
-                     <h3>Zadzwoń lub napisz</h3>
- <span itemprop="telephone" content="510963183" class="span-contactPhone span-container"><i class="fa fa-phone-volume"></i>tel. <b>510 963
+                     <h3>Zadzwoń lub napisz</h3> <span itemprop="telephone" content="510963183" class="span-contactPhone span-container"><i class="fa fa-phone-volume"></i>tel. <b>510 963
 
                     183</b></span>
                     <br> <a href="tel:+48-510-963-183"><i class="fa fa-phone-volume"></i>Zadzwoń</a>
@@ -246,8 +285,7 @@
                     </div>
                 </section>
                 <section class="socialMedia">
-                     <h3>Bądź na bieżąco</h3>
- <a itemprop="https://www.facebook.com/pages/category/Nail-Salon/Studio-Urody-Ann-Mari%C3%A9-181081805771262/"
+                     <h3>Bądź na bieżąco</h3> <a itemprop="https://www.facebook.com/pages/category/Nail-Salon/Studio-Urody-Ann-Mari%C3%A9-181081805771262/"
                     href="https://www.facebook.com/pages/category/Nail-Salon/Studio-Urody-Ann-Mari%C3%A9-181081805771262/"
                     target="_blank" title="Wejdź na naszego facebooka"><i class="fab fa-facebook"></i></a>
                     <a
@@ -296,9 +334,9 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
-        <script type="text/javascript" src="../js/extends/zoomwall/zoomwall.js"></script>
+        <script type="text/javascript" src="js/extends/zoomwall/zoomwall.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="js/main.js"></script>
         <footer>
             <div class="container">
                 <p>© Copyright 2020 | Grzegorz Stącel | All Rights Reserved</p>
