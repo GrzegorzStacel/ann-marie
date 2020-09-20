@@ -1,15 +1,55 @@
-# Beauty-salon
+# #3 Ann Marie
+> This is my third 'Ann Marie' beauty salon website.
+>
+> [Salon Ann Marie](http://salonannmarie.czest.pl/)
 
-This is my 3# third website, this time at the Ann-Marie beauty salon.
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
+
+## General info
 I designed and made it 100% independently.
-I used SCSS, Node, Gulp, jQuery, nanogallery2, slick-carousel and zoomwall libraries.
 
-http://salonannmarie.czest.pl/
+## Screenshots
+![Example screenshot](./img_readme/1.png)
 
----------------------------------------------------------------------------------------------------------------------------------------
+***
 
-To jest moja trzecia strona internetowa, tym razem salonu kosmetycznego Ann-Marie. 
-Zaprojektowałem i wykonałem ją w 100% samodzielnie.
-Korzystałem z technologii SCSS, Node, Gulp oraz z bibliotek jQuery, nanogallery2, slick-carousel oraz zoomwall.
+![Example screenshot](./img_readme/2.png)
 
-http://salonannmarie.czest.pl/
+***
+
+![Example screenshot](./img_readme/3.png)
+
+***
+
+![Example screenshot](./img_readme/4.png)
+
+
+## Technologies
+* CSS- version 3
+* HTML - version 5
+* JavaScript
+* PHP
+* jQuery
+* SCSS
+* Node.js
+* Gulp
+
+### Extends
+* zoomwall.js
+
+## Status
+Project is: _finished_
+
+## Inspiration
+When creating the website design, I was inspired by several pages of beauty salons
+
+## Contact
+Created by [@Grzegorz Stącel](mailto:stacelgrzegorz@gmail.com) - feel free to contact me!
