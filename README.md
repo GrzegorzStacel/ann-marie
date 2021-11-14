@@ -41,7 +41,7 @@ I designed and made it 100% independently.
 * Gulp
 
 ### Extends
-* zoomwall.js
+* [zoomwall.js](https://ericleong.me/zoomwall.js/)
 
 ## Status
 Project is: _finished_
